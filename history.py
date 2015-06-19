@@ -8,6 +8,9 @@ import os
 from config import HISTORY_FILE
 
 def has_file_been_played(filepath):
+    history_dir = os.path.dirname(HISTORY_FILE)
+    if not os.path.exists(history_dir):
+        os.makedirs(history_dir)
     if not os.path.isfile(HISTORY_FILE):
         f = open(HISTORY_FILE, "w")
         f.close()
@@ -28,5 +31,3 @@ def mark_file_played(filepath):
     f.write("%s\n" % filepath)
     f.flush()
     f.close()
-
-

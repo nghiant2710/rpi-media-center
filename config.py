@@ -2,7 +2,7 @@
 import os
 
 # Where to browse for videos, audio and pictures
-MEDIA_ROOT = "/media"
+MEDIA_ROOT = "/data/media"
 
 # Play history and IMDB info cache
 HISTORY_FILE = "/var/cache/pimc/play_history.txt"
@@ -29,7 +29,7 @@ BASH_PROMPT = "(.*)[#\\$]"
 MOVIE_INFO_CMD = "omxplayer --info \"%s\""
 #MOVIE_INFO_LENGTH_REGEX = "length (.*)" # omxplayer <= 2.4
 MOVIE_INFO_LENGTH_REGEX = "Duration: (.+?)," # omxplayer >= 2.5
-MOVIE_PLAY_CMD = "omxplayer -b -o hdmi \"%s\""
+MOVIE_PLAY_CMD = "omxplayer -b \"%s\""
 
 # Commands for image viewing
 VIEW_IMAGE_CMD = "fim -a \"%s\" &"
@@ -37,10 +37,10 @@ VIEW_IMAGE_CLOSE_CMD = "pkill -f fim"
 
 # x86 testing with mplayer/totem on GNOME - override with 
 # these values if we're not on an arm system
-if os.popen("uname -a", "r").read().find("armv6l") == -1:
-    MOVIE_INFO_CMD = "mplayer -identify -frames 0 \"%s\""
-    MOVIE_PLAY_CMD = "totem \"%s\""
-    MOVIE_INFO_LENGTH_REGEX = "ID_LENGTH=(.*)"
-    VIEW_IMAGE_CMD = "geeqie \"%s\" &"
-    VIEW_IMAGE_CLOSE_CMD = "pkill -f geeqie"
+#if os.popen("uname -a", "r").read().find("armv6l") == -1:
+#    MOVIE_INFO_CMD = "mplayer -identify -frames 0 \"%s\""
+#    MOVIE_PLAY_CMD = "totem \"%s\""
+#    MOVIE_INFO_LENGTH_REGEX = "ID_LENGTH=(.*)"
+#    VIEW_IMAGE_CMD = "geeqie \"%s\" &"
+#    VIEW_IMAGE_CLOSE_CMD = "pkill -f geeqie"
 
