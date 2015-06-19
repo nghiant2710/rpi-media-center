@@ -1,0 +1,26 @@
+2015-01-10  Only mark played once play button is hit
+2015-01-02  Show folder.jpg for mp3 folders and use id3 tags
+2015-01-01  Fix dependencies for raspbian packaged omxplayer, update README
+2014-12-31  Project rebrand, better icons, IMDB improvements, deb package
+2014-12-29  Add unit tests and experimental YouTube module
+2014-12-28  Write our own mini IMDB module instead of imdbpy - too slow
+2014-12-28  Sanitise common piracy crap in filenames before IMDB
+2014-12-28  Show HD icon for movies over 1.5GB
+2014-12-28  Don't do IMDB lookups if we're in a subfolder of TV
+2014-12-28  IMDB lookup of movies with info in browser
+2014-05-12  Fix for image viewing/scaling issues
+2014-05-11  Complete refactoring, continuous playback fixed
+2014-04-30  Playback history and new icon for unwatched video
+2014-04-16  Audio stream switching
+2013-10-22  Refactored to support continuous playback
+2013-10-21  Add previous/next track buttons for mp3
+2013-10-21  Added support for images (via fim)
+2013-10-21  Added support for mp3 files (via omxplayer)
+2013-03-04	Removed broken mod calculation as was throwing clock out
+2013-03-01	Use small icons for home/power off, confirm off dialog
+2013-03-01	Fixed to use global variables - FF Android bug during sleep
+2013-03-01 	Added power off button
+2013-03-01 	Fixed bug where clock didn't update after rejoining
+2013-03-01	Better media icons from andymatthews.net
+2013-02-24	Added (slightly inaccurate) fake counter and video length
+2013-02-23  Buttons laid out better

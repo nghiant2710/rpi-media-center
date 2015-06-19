@@ -1,0 +1,41 @@
+    Pi Media Center
+
+    A web-based remote control for omxplayer on the
+    raspberry pi. Uses jquery mobile for tablets/phones.
+
+    Copyright(c)2013-2015, R. Rawson-Tetley
+    
+    This program is covered by the terms of the GNU General Public Licence v3.
+    See the file COPYING for details.
+
+    0. Install omxplayer on your raspberry pi and optionally fim for 
+       framebuffer image display (browsing and showing images)
+       apt-get install omxplayer fim
+
+    1. Install pexpect and webpy on your raspberry pi
+       apt-get install python-pexpect python-webpy
+
+    2. Unpack the tarball to a suitable location, eg: /home/pi/pimc 
+    
+    3. Edit the video folder in the MEDIA_ROOT string at the top of config.py
+
+    4. Start pimc with:
+
+        python code.py 55555
+
+    5. Connect to your raspberry pi on port 55555 with any smartphone/web 
+       browser. Browse your movies, images and mp3s and play them.
+
+    6. IMDB support:
+
+       6.1 Uses the filename to construct a search. Takes everything up to the
+           first fullstop/period and converts underscores to spaces. You will
+           have much better success with filenames like transformers_2.avi and
+           jingle_all_the_way.mp4
+
+       6.2 If a /tv/ folder is found somewhere in the current path, IMDB
+           lookups will not be done.
+
+       6.3 A file called imdb_cache.txt contains all film info looked up with
+           IMDB so after the first lookup, access is quick.
+

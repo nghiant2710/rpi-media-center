@@ -1,0 +1,16 @@
+Delete button for movies
+
+Improve image view performance, fim is slow with 12MP photos
+
+fim is not autozooming properly on portrait images
+
+Front index page:
+    Local media (to /media)
+    Youtube (see omxyt)
+    iPlayer (needs investigation)
+
+Consider writing omximdb into a separate project to run on webserver so that if imdb changes only have to change my service
+Similar service for searching youtube, iplayer and returning video urls maybe for the same reason?
+
+pimc is the client, pimcservice the service, both can be open source
+

@@ -1,0 +1,7 @@
+*.pyc
+*.swp
+play_history.txt
+imdb_cache.txt
+pimc.tar.gz
+deb/pimc
+deb/*.deb
